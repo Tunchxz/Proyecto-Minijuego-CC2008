@@ -14,7 +14,7 @@ public class buyArrows extends Actor
      */
     public void act() 
     {
-       if (Greenfoot.mouseClicked(this) && player.money >= 10)
+       if (Greenfoot.isKeyDown("x") && player.money >= 10)
         {
             player.ammo = player.ammo + 5;
             player.money = player.money - 10;

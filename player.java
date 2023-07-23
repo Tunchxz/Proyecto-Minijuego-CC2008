@@ -216,7 +216,7 @@ public class player extends Actor
         }
         if (lives == 0)
         {
-            Greenfoot.setWorld(new Menu());
+            Greenfoot.setWorld(new gameOver());
         }
     }
 
