@@ -20,14 +20,14 @@ public class fireball extends Actor
         {
             setImage("fireball2.png");
         }
-        if (isTouching(jack.class) && Greenfoot.isKeyDown("down"))
+        if (isTouching(player.class) && Greenfoot.isKeyDown("down"))
         {
             speed = speed * -1;
         }
-        else if (isTouching(jack.class) && !Greenfoot.isKeyDown("down"))
+        else if (isTouching(player.class) && !Greenfoot.isKeyDown("down"))
         {
             getWorld().removeObject(this);
-            jack.lives--;
+            player.lives--;
         }
         else if (isAtEdge())
         {

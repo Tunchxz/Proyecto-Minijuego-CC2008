@@ -78,11 +78,11 @@ public class level4 extends World
         key key = new key();
         addObject(key, 100, 400);
         
-        jack jack = new jack();
-        addObject(jack, 540, 50);
+        player player = new player();
+        addObject(player, 540, 50);
 
-        jack.spawnX = 540;
-        jack.spawnY = 50;
+        player.spawnX = 540;
+        player.spawnY = 50;
         
         hearts hearts = new hearts();
         addObject(hearts, 100, 50);
@@ -90,17 +90,17 @@ public class level4 extends World
         arrowUI arrowui = new arrowUI();
         addObject(arrowui, 50, 100);
 
-        jack.lives = 5;
-        jack.ammo = jack.ammo + 10;
+        player.lives = 5;
+        player.ammo = player.ammo + 10;
         
-         buyArrows buyarrows = new buyArrows();
+        buyArrows buyarrows = new buyArrows();
         addObject(buyarrows, 90, 140);
         
 
     }
     public void act()
     {
-        showText("= "+jack.ammo,80,100);
-        showText("Money: "+jack.money,550,50);
+        showText("= "+player.ammo,80,100);
+        showText("Money: "+player.money,550,50);
     }
 }

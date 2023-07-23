@@ -43,11 +43,11 @@ public class level3 extends World
         portal3 portal3 = new portal3();
         addObject(portal3, 1055, 55);
 
-        jack jack = new jack();
-        addObject(jack, 50, 420);
+        player player = new player();
+        addObject(player, 50, 420);
         
-        jack.spawnX = 50;
-        jack.spawnY = 390;
+        player.spawnX = 50;
+        player.spawnY = 390;
         
         lavaEnemy lavaenemy = new lavaEnemy();
         addObject(lavaenemy, 950, 320);
@@ -64,8 +64,8 @@ public class level3 extends World
         arrowUI arrowui = new arrowUI();
         addObject(arrowui, 50, 100);
 
-        jack.lives = 5;
-        jack.ammo = jack.ammo + 10;
+        player.lives = 5;
+        player.ammo = player.ammo + 10;
         
          buyArrows buyarrows = new buyArrows();
         addObject(buyarrows, 90, 140);
@@ -74,7 +74,7 @@ public class level3 extends World
     }
     public void act()
     {
-        showText("= "+jack.ammo,80,100);
-        showText("Money: "+jack.money,550,50);
+        showText("= "+player.ammo,80,100);
+        showText("Money: "+player.money,550,50);
     }
 }

@@ -48,11 +48,11 @@ public class background extends World
         ghost ghost2 = new ghost();
         addObject(ghost2, 800, 245);
 
-        jack jack = new jack();
-        addObject(jack,50,390);
+        player player = new player();
+        addObject(player,50,390);
 
-        jack.spawnX = 50;
-        jack.spawnY = 390;
+        player.spawnX = 50;
+        player.spawnY = 390;
 
         hearts hearts = new hearts();
         addObject(hearts, 100, 50);
@@ -60,9 +60,9 @@ public class background extends World
         arrowUI arrowui = new arrowUI();
         addObject(arrowui, 50, 100);
 
-        jack.lives = 5;
-        jack.ammo = 10;
-        jack.money = 0;
+        player.lives = 5;
+        player.ammo = 10;
+        player.money = 0;
         
         buyArrows buyarrows = new buyArrows();
         addObject(buyarrows, 90, 140);
@@ -71,8 +71,8 @@ public class background extends World
     }
     public void act()
     {
-        showText("= "+jack.ammo,80,100);
-        showText("Money: "+jack.money,550,50);
+        showText("= "+player.ammo,80,100);
+        showText("Money: "+player.money,550,50);
     }
     
 }

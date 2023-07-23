@@ -14,10 +14,10 @@ public class buyArrows extends Actor
      */
     public void act() 
     {
-       if (Greenfoot.mouseClicked(this) && jack.money >= 10)
+       if (Greenfoot.mouseClicked(this) && player.money >= 10)
         {
-            jack.ammo = jack.ammo + 5;
-            jack.money = jack.money - 10;
+            player.ammo = player.ammo + 5;
+            player.money = player.money - 10;
         }
     }    
 }

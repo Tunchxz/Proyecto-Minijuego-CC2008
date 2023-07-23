@@ -6,7 +6,7 @@ import greenfoot.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class jack extends Actor
+public class player extends Actor
 {
     private int vSpeed = 0;
     private int acc = 1;

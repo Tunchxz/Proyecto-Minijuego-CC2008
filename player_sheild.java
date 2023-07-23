@@ -6,7 +6,7 @@ import greenfoot.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class jack_sheild extends jack
+public class player_sheild extends player
 {
     /**
      * Act - do whatever the jack_sheild wants to do. This method is called whenever

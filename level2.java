@@ -48,8 +48,8 @@ public class level2 extends World
         platform1 platform16 = new platform1();
         addObject(platform16,1050,140);
 
-        jack jack = new jack();
-        addObject(jack, 40, 430);
+        player player = new player();
+        addObject(player, 40, 430);
 
         ghost ghost = new ghost();
         addObject(ghost, 1050, 373);
@@ -78,10 +78,10 @@ public class level2 extends World
         arrowUI arrowui = new arrowUI();
         addObject(arrowui, 50, 100);
 
-        jack.lives = 5;
-        jack.ammo = jack.ammo + 10;
-        jack.spawnX = 50;
-        jack.spawnY = 390;
+        player.lives = 5;
+        player.ammo = player.ammo + 10;
+        player.spawnX = 50;
+        player.spawnY = 390;
         
         portal2 portal2 = new portal2();
         addObject(portal2, 1050, 60);
@@ -93,7 +93,7 @@ public class level2 extends World
     }
     public void act()
     {
-        showText("= "+jack.ammo,80,100);
-        showText("Money: "+jack.money,550,50);
+        showText("= "+player.ammo,80,100);
+        showText("Money: "+player.money,550,50);
     }
 }

@@ -14,27 +14,27 @@ public class hearts extends Actor
      */
     public void act() 
     {
-        if (jack.lives == 1)
+        if (player.lives == 1)
         {
             setImage("hearts_1.png");
         }
-        if (jack.lives == 2)
+        if (player.lives == 2)
         {
             setImage("hearts_2.png");
         }
-        if (jack.lives == 3)
+        if (player.lives == 3)
         {
             setImage("hearts_3.png");
         }
-        if (jack.lives == 4)
+        if (player.lives == 4)
         {
             setImage("hearts_4.png");
         }
-        if (jack.lives == 5)
+        if (player.lives == 5)
         {
             setImage("hearts_5.png");
         }
-        if (jack.lives == 0)
+        if (player.lives == 0)
         {
             setImage("nothing.png");
         }
