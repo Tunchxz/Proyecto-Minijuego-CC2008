@@ -216,7 +216,7 @@ public class jack extends Actor
         }
         if (lives == 0)
         {
-            Greenfoot.setWorld(new opening());
+            Greenfoot.setWorld(new Menu());
         }
     }
 
