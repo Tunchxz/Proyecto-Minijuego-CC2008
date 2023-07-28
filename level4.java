@@ -92,15 +92,11 @@ public class level4 extends World
 
         player.lives = 5;
         player.ammo = player.ammo + 10;
-        
-        buyArrows buyarrows = new buyArrows();
-        addObject(buyarrows, 90, 140);
-        
 
     }
     public void act()
     {
         showText("= "+player.ammo,80,100);
-        showText("Money: "+player.money,550,50);
+        showText("Almas: "+player.money,550,50);
     }
 }

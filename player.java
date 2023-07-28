@@ -137,10 +137,12 @@ public class player extends Actor
                 if (shot.getRotation() == 0)
                 {
                     setImage("player_shootR.png");
+                    Greenfoot.playSound("disparo.mp3");
                 }
                 else if (shot.getRotation() == 180)
                 {
                     setImage("player_shootL.png");
+                    Greenfoot.playSound("disparo.mp3");
                 }
                 getWorld().addObject(shot,getX(),getY());
                 ammo = ammo - 1;
@@ -222,6 +224,7 @@ public class player extends Actor
 
     public void die()
     {
+        Greenfoot.playSound("damage.MP3");
         lives = lives - 1;
         setLocation(spawnX,spawnY);
     }

@@ -8,7 +8,7 @@ import greenfoot.*;
  */
 public class background extends World
 {
-
+    GreenfootSound sound = new GreenfootSound("play.mp3");
     /**
      * Constructor for objects of class background.
      * 
@@ -65,14 +65,15 @@ public class background extends World
         player.money = 0;
         
         buyArrows buyarrows = new buyArrows();
-        addObject(buyarrows, 90, 140);
+        addObject(buyarrows,90,140);
         
+        sound.play();
        
     }
     public void act()
     {
         showText("= "+player.ammo,80,100);
-        showText("Money: "+player.money,550,50);
+        showText("Almas: "+player.money,550,50);
     }
     
 }

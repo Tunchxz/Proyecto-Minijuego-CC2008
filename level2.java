@@ -86,14 +86,12 @@ public class level2 extends World
         portal2 portal2 = new portal2();
         addObject(portal2, 1050, 60);
         
-         buyArrows buyarrows = new buyArrows();
-        addObject(buyarrows, 90, 140);
-        
-        
+        buyArrows buyarrows = new buyArrows();
+        addObject(buyarrows,90,140);
     }
     public void act()
     {
         showText("= "+player.ammo,80,100);
-        showText("Money: "+player.money,550,50);
+        showText("Almas: "+player.money,550,50);
     }
 }

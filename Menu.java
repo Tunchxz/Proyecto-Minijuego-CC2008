@@ -3,13 +3,14 @@ public class Menu extends World
 {
     Flecha flecha = new Flecha();
     private int opcion = 0; // 0 = Jugar 1 = Salir
-
-
+    //instead of:
+    GreenfootSound sound = new GreenfootSound("menu.mp3");
 public Menu()
 {
     // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
     super(1100, 550, 1); 
     prepararMundo();
+    
 }
 /**
  
@@ -18,11 +19,13 @@ That is: create the initial objects and add them to the world.
 */
 private void prepararMundo()
 {
+    //Greenfoot.playSound("menu.mp3");
     BotonJugar botonJugar = new BotonJugar();
     BotonSalir botonSalir = new BotonSalir();
     addObject(botonJugar,525,290);
     addObject(botonSalir,525,380);
     addObject(flecha, 350,290);
+    sound.play();
 }
 
 public void act(){
@@ -38,6 +41,7 @@ public void act(){
         switch(opcion){
             case 0: // jugar
                 Greenfoot.start();
+                sound.stop();
                 break;
             case 1: // salir
                 Greenfoot.stop();
