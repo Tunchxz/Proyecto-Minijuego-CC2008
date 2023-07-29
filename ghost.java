@@ -115,6 +115,7 @@ public class ghost extends Actor
     } 
     public void die()
     {
+        Greenfoot.playSound("kill.mp3"); 
         coin coin = new coin();
         getWorld().addObject(coin,getX(),getY());
         getWorld().removeObject(this);

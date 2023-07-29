@@ -20,7 +20,7 @@ public class buyArrows extends Actor
         {
             player.ammo = player.ammo + 5;
             player.money = player.money - 10;
-            sound.play();
+            sound.play();      
         }
     }    
 }
