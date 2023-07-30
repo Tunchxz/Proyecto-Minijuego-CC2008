@@ -243,22 +243,27 @@ public class player extends Actor
     {
         if (isTouching(portal5.class))
         {
+            Greenfoot.playSound("portal.mp3");
             Greenfoot.setWorld(new background());
         }
         if (isTouching(portal.class))
         {
+            Greenfoot.playSound("portal.mp3");
             Greenfoot.setWorld(new level2());
         }
         if (isTouching(portal2.class))
         {
+            Greenfoot.playSound("portal.mp3");
             Greenfoot.setWorld(new level3());
         }
         if (isTouching(portal3.class))
         {
+            Greenfoot.playSound("portal.mp3");
             Greenfoot.setWorld(new level4());
         }
         if (isTouching(portal6.class))
         {
+            Greenfoot.playSound("portal.mp3");
             Greenfoot.setWorld(new level5());
         }
     }
