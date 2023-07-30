@@ -218,6 +218,7 @@ public class player extends Actor
         }
         if (lives == 0)
         {
+            Greenfoot.playSound("gameover.mp3");
             Greenfoot.setWorld(new gameOver());
         }
     }
