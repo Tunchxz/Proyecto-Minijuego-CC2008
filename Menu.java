@@ -29,8 +29,14 @@ private void prepararMundo()
 }
 
 public void act(){
-    if (Greenfoot.isKeyDown("up") && opcion != 0) {opcion++;}
-    if (Greenfoot.isKeyDown("down") && opcion != 1){opcion--;}
+    if (Greenfoot.isKeyDown("up") && opcion != 0) {
+            Greenfoot.playSound("select.mp3");
+            opcion++;
+        }
+        if (Greenfoot.isKeyDown("down") && opcion != 1){
+            Greenfoot.playSound("select.mp3");
+            opcion--;
+        }
 
     if(opcion>=2) opcion = 0;
     if(opcion<0) opcion = 1;
